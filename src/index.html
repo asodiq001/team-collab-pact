@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Collaboration Practice</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .member { padding: 10px; border: 1px solid #ddd; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Team Collaboration Practice</h1>
+    <p>This project is for learning Git team workflows.</p>
+
+    <h2>Team Members</h2>
+    <div id="members"></div>
+
+    <h2>Team Guidelines</h2>
+    <ul>
+        <li>Always create a new branch for features</li>
+        <li>Never push directly to main</li>
+        <li>Open a Pull Request for code review</li>
+        <li>Require at least one approval before merging</li>
+    </ul>
+
+    <script>
+        const members = [
+            { name: "Yusuf (asodiq001)", role: "Team Lead" },
+            { name: "dr-hayo", role: "Collaborator" }
+        ];
+
+        const membersDiv = document.getElementById('members');
+        members.forEach(member => {
+            const div = document.createElement('div');
+            div.className = 'member';
+            div.innerHTML = `<strong>${member.name}</strong> — ${member.role}`;
+            membersDiv.appendChild(div);
+        });
+    </script>
+</body>
+</html>
