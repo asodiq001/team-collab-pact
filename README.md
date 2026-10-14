@@ -10,6 +10,7 @@ Git team workflow projects.
 
 - **asodiq001** (Yusuf) — Team Lead
 - **dr-hayo** — Collaborator
+- **devcode** - Junior Dev
 
 ## What We did Practice
 
